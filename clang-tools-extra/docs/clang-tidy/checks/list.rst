@@ -115,8 +115,8 @@ Clang-Tidy Checks
    :doc:`bugprone-multiple-new-in-one-expression <bugprone/multiple-new-in-one-expression>`,
    :doc:`bugprone-multiple-statement-macro <bugprone/multiple-statement-macro>`,
    :doc:`bugprone-no-escape <bugprone/no-escape>`,
-   :doc:`bugprone-nondeterministic-pointer-iteration-order <bugprone/nondeterministic-pointer-iteration-order>`,
    :doc:`bugprone-non-zero-enum-to-bool-conversion <bugprone/non-zero-enum-to-bool-conversion>`,
+   :doc:`bugprone-nondeterministic-pointer-iteration-order <bugprone/nondeterministic-pointer-iteration-order>`,
    :doc:`bugprone-not-null-terminated-result <bugprone/not-null-terminated-result>`, "Yes"
    :doc:`bugprone-optional-value-conversion <bugprone/optional-value-conversion>`, "Yes"
    :doc:`bugprone-parent-virtual-call <bugprone/parent-virtual-call>`, "Yes"
@@ -273,6 +273,11 @@ Clang-Tidy Checks
    :doc:`misc-unused-using-decls <misc/unused-using-decls>`, "Yes"
    :doc:`misc-use-anonymous-namespace <misc/use-anonymous-namespace>`,
    :doc:`misc-use-internal-linkage <misc/use-internal-linkage>`, "Yes"
+   :doc:`misc-yarden-comment-longfunction <misc/yarden-comment-longfunction>`, "Yes"
+   :doc:`misc-yarden-comment-preferblock <misc/yarden-comment-preferblock>`, "Yes"
+   :doc:`misc-yarden-comment-spacebeforeblock <misc/yarden-comment-spacebeforeblock>`, "Yes"
+   :doc:`misc-yarden-forloop-counter <misc/yarden-forloop-counter>`,
+   :doc:`misc-yarden-whileloop-counter <misc/yarden-whileloop-counter>`, "Yes"
    :doc:`modernize-avoid-bind <modernize/avoid-bind>`, "Yes"
    :doc:`modernize-avoid-c-arrays <modernize/avoid-c-arrays>`,
    :doc:`modernize-concat-nested-namespaces <modernize/concat-nested-namespaces>`, "Yes"

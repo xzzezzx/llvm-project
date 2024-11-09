@@ -32,6 +32,11 @@
 #include "UnusedUsingDeclsCheck.h"
 #include "UseAnonymousNamespaceCheck.h"
 #include "UseInternalLinkageCheck.h"
+#include "YardenCommentLongfunctionCheck.h"
+#include "YardenCommentPreferblockCheck.h"
+#include "YardenCommentSpacebeforeblockCheck.h"
+#include "YardenForloopCounterCheck.h"
+#include "YardenWhileloopCounterCheck.h"
 
 namespace clang::tidy {
 namespace misc {
@@ -81,6 +86,16 @@ public:
         "misc-use-anonymous-namespace");
     CheckFactories.registerCheck<UseInternalLinkageCheck>(
         "misc-use-internal-linkage");
+    CheckFactories.registerCheck<YardenCommentLongfunctionCheck>(
+        "misc-yarden-comment-longfunction");
+    CheckFactories.registerCheck<YardenCommentPreferblockCheck>(
+        "misc-yarden-comment-preferblock");
+    CheckFactories.registerCheck<YardenCommentSpacebeforeblockCheck>(
+        "misc-yarden-comment-spacebeforeblock");
+    CheckFactories.registerCheck<YardenForloopCounterCheck>(
+        "misc-yarden-forloop-counter");
+    CheckFactories.registerCheck<YardenWhileloopCounterCheck>(
+        "misc-yarden-whileloop-counter");
   }
 };
 

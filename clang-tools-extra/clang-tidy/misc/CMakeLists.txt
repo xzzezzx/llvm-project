@@ -42,6 +42,11 @@ add_clang_library(clangTidyMiscModule STATIC
   UnusedUsingDeclsCheck.cpp
   UseAnonymousNamespaceCheck.cpp
   UseInternalLinkageCheck.cpp
+  YardenCommentLongfunctionCheck.cpp
+  YardenCommentPreferblockCheck.cpp
+  YardenCommentSpacebeforeblockCheck.cpp
+  YardenForloopCounterCheck.cpp
+  YardenWhileloopCounterCheck.cpp
 
   LINK_LIBS
   clangTidy
