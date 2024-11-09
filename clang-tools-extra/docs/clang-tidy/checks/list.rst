@@ -273,11 +273,13 @@ Clang-Tidy Checks
    :doc:`misc-unused-using-decls <misc/unused-using-decls>`, "Yes"
    :doc:`misc-use-anonymous-namespace <misc/use-anonymous-namespace>`,
    :doc:`misc-use-internal-linkage <misc/use-internal-linkage>`, "Yes"
-   :doc:`misc-yarden-comment-longfunction <misc/yarden-comment-longfunction>`, "Yes"
-   :doc:`misc-yarden-comment-preferblock <misc/yarden-comment-preferblock>`, "Yes"
+   :doc:`misc-yarden-comment-explain-function <misc/yarden-comment-explain-function>`,
+   :doc:`misc-yarden-comment-longfunction <misc/yarden-comment-longfunction>`,
+   :doc:`misc-yarden-comment-preferblock <misc/yarden-comment-preferblock>`,
    :doc:`misc-yarden-comment-spacebeforeblock <misc/yarden-comment-spacebeforeblock>`, "Yes"
    :doc:`misc-yarden-forloop-counter <misc/yarden-forloop-counter>`,
-   :doc:`misc-yarden-whileloop-counter <misc/yarden-whileloop-counter>`, "Yes"
+   :doc:`misc-yarden-line-length <misc/yarden-line-length>`, "Yes"
+   :doc:`misc-yarden-whileloop-counter <misc/yarden-whileloop-counter>`,
    :doc:`modernize-avoid-bind <modernize/avoid-bind>`, "Yes"
    :doc:`modernize-avoid-c-arrays <modernize/avoid-c-arrays>`,
    :doc:`modernize-concat-nested-namespaces <modernize/concat-nested-namespaces>`, "Yes"

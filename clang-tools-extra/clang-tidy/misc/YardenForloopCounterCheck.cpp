@@ -18,8 +18,10 @@ void YardenForloopCounterCheck::registerMatchers(MatchFinder *Finder) {
       forStmt(
           hasLoopInit(declStmt(hasSingleDecl(varDecl(hasInitializer(expr())).bind("counterVarDecl")))),
           hasBody(hasDescendant(
-              binaryOperator(isAssignmentOperator(),
-                             hasLHS(ignoringParenImpCasts(declRefExpr(to(varDecl(equalsBoundNode("counterVarDecl")))))))
+              binaryOperator(
+                  isAssignmentOperator(),
+                  hasLHS(ignoringParenImpCasts(declRefExpr(to(varDecl(equalsBoundNode("counterVarDecl"))))))
+              ).bind("assignment")
           ))
       ).bind("forLoop"),
       this);
@@ -28,12 +30,13 @@ void YardenForloopCounterCheck::registerMatchers(MatchFinder *Finder) {
 void YardenForloopCounterCheck::check(const MatchFinder::MatchResult &Result) {
   const auto *ForLoop = Result.Nodes.getNodeAs<ForStmt>("forLoop");
   const auto *CounterVarDecl = Result.Nodes.getNodeAs<VarDecl>("counterVarDecl");
+  const auto *Assignment = Result.Nodes.getNodeAs<BinaryOperator>("assignment");
 
-  if (!ForLoop || !CounterVarDecl)
+  if (!ForLoop || !CounterVarDecl || !Assignment)
     return;
 
-  // Emit a diagnostic warning when a loop counter variable is modified inside the loop body.
-  diag(ForLoop->getBeginLoc(),
+  // Emit a diagnostic warning at the location of the assignment.
+  diag(Assignment->getBeginLoc(),
        "modifying loop counter variable '%0' inside the loop body is disallowed")
       << CounterVarDecl->getName();
 }

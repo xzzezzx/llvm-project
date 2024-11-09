@@ -131,6 +131,11 @@ New checks
   Gives warnings for tagged unions, where the number of tags is
   different from the number of data members inside the union.
 
+- New :doc:`misc-yarden-comment-explain-function
+  <clang-tidy/checks/misc/yarden-comment-explain-function>` check.
+
+  FIXME: Write a short description.
+
 - New :doc:`misc-yarden-comment-longfunction
   <clang-tidy/checks/misc/yarden-comment-longfunction>` check.
 
@@ -148,6 +153,11 @@ New checks
 
 - New :doc:`misc-yarden-forloop-counter
   <clang-tidy/checks/misc/yarden-forloop-counter>` check.
+
+  FIXME: Write a short description.
+
+- New :doc:`misc-yarden-line-length
+  <clang-tidy/checks/misc/yarden-line-length>` check.
 
   FIXME: Write a short description.
 

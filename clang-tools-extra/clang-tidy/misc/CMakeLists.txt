@@ -42,10 +42,12 @@ add_clang_library(clangTidyMiscModule STATIC
   UnusedUsingDeclsCheck.cpp
   UseAnonymousNamespaceCheck.cpp
   UseInternalLinkageCheck.cpp
+  YardenCommentExplainFunctionCheck.cpp
   YardenCommentLongfunctionCheck.cpp
   YardenCommentPreferblockCheck.cpp
   YardenCommentSpacebeforeblockCheck.cpp
   YardenForloopCounterCheck.cpp
+  YardenLineLengthCheck.cpp
   YardenWhileloopCounterCheck.cpp
 
   LINK_LIBS
